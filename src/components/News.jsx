@@ -25,10 +25,7 @@ export class News extends Component {
     fetchMoreData = async () => {
         try {
             this.setState({ loading: true });
-            // let url = `https://newsapi.org/v2/top-headlines?country=us&apikey=81f5e798d3434c3c9544f4ef37cbcbad&page=${this.state.page + 1}&pagesize=${this.props.page_size}&category=${this.props.category}`;
-
-            // let url = `http://localhost:5000/news?country=us&apikey=81f5e798d3434c3c9544f4ef37cbcbad&page=${this.state.page + 1}&pagesize=${this.props.page_size}&category=${this.props.category}`;
-
+           
             let url = `https://newsroom-backend.onrender.com/news?country=us&apikey=81f5e798d3434c3c9544f4ef37cbcbad&page=${this.state.page + 1}&pagesize=${this.props.page_size}&category=${this.props.category}`;
             
             await this.setState({ page: this.state.page + 1 })
