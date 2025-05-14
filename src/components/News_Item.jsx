@@ -7,9 +7,17 @@ export class News_Item extends Component {
 
         return (
 
-            <a href={news_url} target='_blank'>
-                <div className="mx-10 my-4 max-w-sm rounded-md overflow-hidden shadow-lg hover:outline outline-cyan-400" >
-                    <img className="w-full" src={image_url} alt="Sunset in the mountains" />
+            <div >
+                <div className="mx-10 my-4 max-w-sm rounded-md overflow-hidden shadow-lg hover:outline outline-cyan-400"
+                    onClick={() => { window.open(news_url, "_blank") }}
+                    style={{ cursor: "pointer" }}>
+                    {/* <img className="w-full" src={image_url} alt="Sunset in the mountains" /> */}
+                    <img
+                        className="w-full"
+                        src={image_url}
+                        alt="Sunset in the mountains"
+                        onError={e => { e.target.onerror = null; e.target.src = "https://images.pexels.com/photos/1928151/pexels-photo-1928151.jpeg"; }}
+                    />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{title}</div>
                         <p className="text-gray-700 text-base">
@@ -30,7 +38,7 @@ export class News_Item extends Component {
                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span> */}
                     </div>
                 </div>
-            </a>
+            </div>
 
         )
     }

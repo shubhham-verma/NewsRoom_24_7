@@ -14,9 +14,10 @@ export class Navbar extends Component {
 
                     <div className="text text-white " style={{ height: "fit-content" }}>
                         <ul className='flex  text-base '>
+                            {/* <li><Link type='button' className='font-thin text-2xl p-3 hover:cursor-pointer  hover:bg-slate-800 hover:font-normal hover:border-r-2 border-cyan-400 bg-black ' to='/general'>General</Link></li> */}
                             <li><Link type='button' className='font-thin text-2xl p-3 hover:cursor-pointer  hover:bg-slate-800 hover:font-normal hover:border-r-2 border-cyan-400 bg-black ' to='/business'>Business</Link></li>
                             <li><Link type='button' className='font-thin text-2xl p-3 hover:cursor-pointer  hover:bg-slate-800 hover:font-normal hover:border-r-2 border-cyan-400 bg-black ' to='/entertainment'>Entertainment</Link></li>
-                            <li><Link type='button' className='font-thin text-2xl p-3 hover:cursor-pointer  hover:bg-slate-800 hover:font-normal hover:border-r-2 border-cyan-400 bg-black ' to='/general'>General</Link></li>
+
                             <li><Link type='button' className='font-thin text-2xl p-3 hover:cursor-pointer  hover:bg-slate-800 hover:font-normal hover:border-r-2 border-cyan-400 bg-black ' to='/health'>Health</Link></li>
                             <li><Link type='button' className='font-thin text-2xl p-3 hover:cursor-pointer  hover:bg-slate-800 hover:font-normal hover:border-r-2 border-cyan-400 bg-black' to='/science'>Science</Link></li>
                             <li><Link type='button' className='font-thin text-2xl p-3 hover:cursor-pointer  hover:bg-slate-800 hover:font-normal hover:border-r-2 border-cyan-400 bg-black' to='/sports'>Sports</Link></li>

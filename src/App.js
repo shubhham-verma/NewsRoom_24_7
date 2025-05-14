@@ -27,17 +27,40 @@ export default class App extends Component {
         <BrowserRouter>
           {/* <LoadingBar progress={this.state.progress} height={this.state.height} /> */}
           <Navbar />
+
           <Routes>
-            <Route exact path="/" element={<News setprpage_size={9} category={"general"} key='general' />}></Route>
+            <Route exact path="/" element={<News page_size={9} category={"general"} key='general' />}></Route>
+
+            <Route exact path="/Newsroom-24_7" element={<News page_size={9} category={"general"} key='general' />}></Route>
+
             <Route exact path="/business" element={<News page_size={9} category={"business"} key='business' />}></Route>
+
             <Route exact path="/entertainment" element={<News page_size={9} category={"entertainment"} key='entertainment' />}></Route>
+
             <Route exact path="/general" element={<News page_size={9} category={"general"} key='general' />}></Route>
+
             <Route exact path="/health" element={<News page_size={9} category={"health"} key='health' />}></Route>
+
             <Route exact path="/science" element={<News page_size={9} category={"science"} key='science' />}></Route>
+
             <Route exact path="/sports" element={<News page_size={9} category={"sports"} key='sports' />}></Route>
+
             <Route exact path="/technology" element={<News page_size={9} category={"technology"} key='technology' />}></Route>
-          </Routes>
-        </BrowserRouter>
+
+{/* 
+
+            <Route exact path="/" element={<News page_size={9} category={"general"} />} />
+            <Route exact path="/business" element={<News page_size={9} category={"business"} />} />
+            <Route exact path="/entertainment" element={<News page_size={9} category={"entertainment"} />} />
+            <Route exact path="/general" element={<News page_size={9} category={"general"} />} />
+            <Route exact path="/health" element={<News page_size={9} category={"health"} />} />
+            <Route exact path="/science" element={<News page_size={9} category={"science"} />} />
+            <Route exact path="/sports" element={<News page_size={9} category={"sports"} />} />
+            <Route exact path="/technology" element={<News page_size={9} category={"technology"} />} /> */}
+
+
+        </Routes>
+      </BrowserRouter >
       </>
     )
   }
