@@ -1,4 +1,5 @@
-# Newsroom 24/7
+# Newsroom 24/7 
+# https://newsroom-24-7.netlify.app/
 
 A modern React-based news web application that delivers the latest headlines across various categories using the NewsAPI, with infinite scrolling and a custom backend proxy for secure API access.
 
