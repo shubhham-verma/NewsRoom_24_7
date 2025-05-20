@@ -25,12 +25,7 @@ export class News extends Component {
     fetchMoreData = async () => {
         try {
             this.setState({ loading: true });
-            // for hitting the news api
-            // let url = `https://newsapi.org/v2/top-headlines?country=us&apikey=81f5e798d3434c3c9544f4ef37cbcbad&page=${this.state.page + 1}&pagesize=${this.props.page_size}&category=${this.props.category}`;
-
-            // for hitting the backend 
-            // let url = `http://localhost:5000/news?country=us&apikey=81f5e798d3434c3c9544f4ef37cbcbad&page=${this.state.page + 1}&pagesize=${this.props.page_size}&category=${this.props.category}`;
-
+            
             // for hitting the hosted backend on render
             let url = `${process.env.REACT_APP_BACKEND_URL}/news?country=us&apikey=81f5e798d3434c3c9544f4ef37cbcbad&page=${this.state.page + 1}&pagesize=${this.props.page_size}&category=${this.props.category}`;
             
